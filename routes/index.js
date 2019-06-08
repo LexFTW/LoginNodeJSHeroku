@@ -20,7 +20,7 @@ router.post('/', function(req, res){
     }
   }
 
-  res.render('error', {title: 'Login con NodeJS - Express', message: 'Nombre de Usuario y/o Contraseña Incorrecto'});
+  res.render('error', {title: 'Login con NodeJS - Express', message: 'Nombre de Usuario y/o Contraseña Incorrecto. Los usuarios disponibles son: alexis.mengual / Contraseña; duson / 1234; emieza / 1234'});
   return;
 });
 
