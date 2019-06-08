@@ -9,7 +9,7 @@ const users = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Login con NodeJS - Express' });
 });
 
 router.post('/', function(req, res){
@@ -19,6 +19,9 @@ router.post('/', function(req, res){
       return;
     }
   }
+
+  res.render('error', {title: 'Login con NodeJS - Express', message: 'Nombre de Usuario y/o Contraseña Incorrecto'});
+  return;
 });
 
 router.get('/api/login/:user/:pass', function(req, res){
